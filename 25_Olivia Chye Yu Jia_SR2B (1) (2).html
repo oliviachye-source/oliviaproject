@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>樱花之国-日本</title>
+<style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #FCD4F7;
+      color: #000000;
+      opacity: 0;
+      transition: opacity 1.2s ease-in;
+    }
+
+header {
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: #DEA6FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    }
+
+header h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+header p {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+
+nav {
+      background-color: #DEA6FF;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      font-weight: bold;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+nav a:hover {
+      text-decoration: underline;
+    }
+
+section {
+      padding: 40px 10%;
+    }
+
+section h2 {
+      color: purple;
+      border-bottom: 2px solid #cc0000;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+content {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+content img {
+      max-width: 400px;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+
+content img:hover {
+      transform: scale(1.05);
+    }
+
+content-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .content img {
+        max-width: 100%;
+      }
+    }
+
+#highlight {
+      background-color: #DEA6FF;
+      transition: background-color 1s;
+    }
+
+.sakura {
+      position: fixed;
+      top: -50px;
+      width: 20px;
+      height: 20px;
+      background-image: url('https://i.imgur.com/Hb4dEj2.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 9999;
+      pointer-events: none;
+      animation: fall linear infinite;
+    }
+
+@keyframes fall {
+      to {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+#backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #DEA6FF;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+      cursor: pointer;
+      display: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+
+    #backToTop:hover {
+      background-color: #c27ee3;
+    }
+</style>
+</head>
+<body>
+
+<header>
+<h1>🌸 樱花之国 - 日本 🇯🇵</h1>
+<p>发现日本</p>
+</header>
+
+<nav>
+<a href="#geography">地理</a>
+<a href="#culture">文化</a>
+<a href="#history">历史</a>
+<a href="#tourism">景点</a>
+<a href="#food">美食</a>
+</nav>
+
+<section id="geography">
+<h2>1.地理</h2>
+<div class="content">
+<img src="japan.jpg" alt="日本地理">
+<div class="content-text">
+<p>日本是位于东亚的一个岛国，地处太平洋西北部，东临太平洋，西隔日本海与朝鲜半岛、中国相望。其地理位置介于北纬24度至46度、东经123度至146度之间。日本由四个主要岛屿——本州、北海道、九州和四国——以及约6,800多个小岛组成，总面积约为37.8万平方公里。</p>
+<p>由于日本是一个多山的国家，约70%的国土被山地覆盖，平原面积较小，主要集中在沿海地区，如关东平原和大阪平原。其中，日本最高峰为富士山，海拔3,776米，是著名的象征性山峰和旅游胜地。</p>
+<p>日本地处太平洋火环地带，属于地震和火山活动频繁的地区。境内有多座活火山，地震时常发生，因此防灾意识在社会中非常强烈，建筑设计也普遍注重抗震性能。</p>
+<p>此外，日本拥有众多河流与湖泊，水资源丰富。其气候从北到南呈现明显的地域差异，北海道属于温带大陆性气候，而南部的冲绳则属亚热带气候。整体而言，日本四季分明，春樱秋枫是其自然景观的一大特色。</p>
+</div>
+</div>
+</section>
+
+<section id="culture">
+<h2>2.文化</h2>
+<div class="content">
+<img src="culture.jpg" alt="日本文化">
+<div class="content-text">
+<p>日本文化是一个融合了传统与现代、东方与西方的独特体系，具有深厚的历史底蕴与独特的美学风格。它在长期的发展过程中，既保留了本土的文化根源，又吸收并融合了外来文化，特别是中国文化、佛教文化以及近代以来的西方文化。</p>
+<p>在传统文化方面，日本拥有诸多标志性的艺术形式，如茶道、花道（插花）、书道（书法）、和服、能乐、歌舞伎等，这些都体现了日本人对自然、秩序与简约美的追求。此外，祭典文化在日本也非常丰富，每个地区几乎都有自己的传统节日和仪式，如祇园祭、雪祭、夏日烟火大会等，展现出浓厚的地域文化特色。</p>
+<p>宗教方面，日本以神道和佛教为主，两者常常在民众生活中并存。神道重视自然和祖先崇拜，体现在众多神社和民间仪式中；而佛教则对日本的哲学、建筑和艺术有深远影响。</p>
+<p>现代文化方面，日本在流行文化、设计、科技与创意产业方面在全球具有极高的影响力。如动漫、漫画、电子游戏、时尚与J-POP音乐等，在国际上拥有大量粉丝和追随者。此外，日本的餐饮文化也独树一帜，如寿司、拉面、天妇罗等，深受世界各地人们喜爱，并被联合国教科文组织列入世界非物质文化遗产。</p>
+<p>日本社会文化普遍强调礼仪、集体意识、勤劳与秩序，这些价值观深刻影响了人们的日常生活、工作方式和社会交往。</p>
+</div>
+</div>
+</section>
+
+<section id="history">
+<h2>3.历史</h2>
+<div class="content">
+<img src="tokugawa.jpg" alt="日本历史">
+<div class="content-text">
+<p>日本的历史悠久而丰富，其文明起源可以追溯到数万年前的旧石器时代。最早的有文字记载的文化阶段是绳文时代（约公元前13000年至公元前300年），以狩猎采集和陶器制造为特征。随后进入弥生时代，稻作农业开始普及，社会逐步向阶层化发展。</p>
+<p>到了3世纪，日本进入了古坟时代，逐渐形成早期国家结构。公元6世纪，佛教自中国和朝鲜传入，对日本宗教、文化和政治产生了深远影响。此后，飞鸟时代和奈良时代见证了中央集权体制的确立与中华文化的广泛吸收。</p>
+<p>进入平安时代（794–1185年），日本文化逐渐本土化，产生了许多经典文学作品，如《源氏物语》。此时期贵族文化盛行，政治上则日益由贵族世家掌控。</p>
+<p>自镰仓时代起（1185年），武士阶层逐渐掌权，确立了幕府制度，即将政权掌握在将军手中，天皇则成为象征性的国家元首。这一体制持续了数百年，历经室町幕府、战国时代的混战，以及统一全国的德川幕府（江户时代，1603–1868年）。</p>
+<p>明治维新（1868年）是日本历史上的重大转折点。德川幕府被推翻，天皇重新掌握政权。日本迅速推进现代化和工业化，建立起近代国家体制，积极引进西方制度与科技，逐步成为亚洲的强国。</p>
+<p>20世纪上半叶，日本走上军国主义道路，参与多场战争，包括侵华战争和第二次世界大战。1945年战败后，日本接受盟军占领，进行了深刻的政治和社会改革，包括制定新宪法、放弃战争、确立民主制度。</p>
+<p>战后，日本经济迅速复苏，进入“经济奇迹”时期，成为世界第二大经济体（现为第三）。与此同时，日本在文化、科技和国际事务中逐步恢复影响力，成为一个和平、发达的现代国家。</p>
+</div>
+</div>
+</section>
+
+<section id="tourism">
+<h2>4.景点</h2>
+<div class="content">
+<img src="fuji.jpg" alt="富士山">
+<div class="content-text">
+<p>日本是一个自然景观与人文古迹兼具的国家，四季分明、地域多样，拥有众多吸引国内外游客的著名景点。从古老的寺庙神社到现代都市风貌，从雪山湖泊到樱花庭园，日本的旅游资源极为丰富。</p>
+<p>首先，日本的自然景观令人称道。最具代表性的便是富士山，它是日本的最高峰，也被视为国家的象征，每年吸引大量登山客和摄影爱好者。位于北海道的知床半岛、大雪山和富良野花田，展现出日本北方的纯净自然和四季风光。而在南部，冲绳群岛以碧海蓝天、珊瑚礁和热带风情闻名，是潜水和度假的天堂。</p>
+<p>在人文景观方面，京都是日本传统文化的核心城市，拥有众多世界文化遗产，如金阁寺、清水寺、伏见稻荷大社等古刹名胜，体现出日本建筑、宗教与自然的和谐统一。奈良则以东大寺、奈良公园和自由漫步的鹿群而广受欢迎，是日本最早的古都之一。</p>
+<p>现代城市方面，东京作为首都，不仅是政治经济中心，也充满活力与创新。从涩谷的十字路口、秋叶原的动漫圣地，到台场的未来城市风貌，东京兼具传统与现代。大阪则以美食、欢乐和亲民氛围著称，其代表景点包括大阪城和环球影城日本（USJ）。</p>
+<p>此外，广岛的原爆圆顶馆和和平纪念公园则提醒人们铭记历史、珍惜和平。箱根、草津、别府等温泉地，则展示了日本独特的温泉文化与自然疗养资源。</p>
+</div>
+</div>
+</section>
+
+<section id="food">
+<h2>5.美食</h2>
+<div class="content">
+<img src="sushi.jpg" alt="日本美食">
+<div class="content-text">
+<p>日本美食以其讲究的食材选择、精致的摆盘、和对季节感的重视而闻名于世。日本料理强调食物的原味与自然美感，追求“色、香、味、形”的和谐统一，因而被誉为世界上最具艺术性的料理之一，并在2013年被联合国教科文组织列为人类非物质文化遗产。</p>
+<p>最具代表性的日本料理包括寿司和生鱼片（刺身）。寿司将醋饭与新鲜海鲜或其他食材搭配，是日本饮食文化的象征之一。生鱼片则展现了日本人对食材新鲜度的极高要求，通常搭配酱油、芥末和萝卜丝食用。</p>
+<p>拉面是日本最受欢迎的国民美食之一，具有多种口味，如豚骨、酱油、味噌和盐味等，各地还有不同风格的地方拉面，如北海道的味噌拉面和九州的博多豚骨拉面。另有如乌冬面和荞麦面等传统面食，也在全国广受欢迎。</p>
+<p>日本的便当文化也别具一格，体现了日常生活中的细致与美感。各式便当不仅美味可口，也重视色彩与营养的平衡，深受学生和上班族喜爱。</p>
+<p>此外，日本有着丰富的季节性美食与地方特色料理，如关西的章鱼烧、广岛的御好烧、北海道的海鲜丼、名古屋的味增猪排等，展现出各地不同的饮食文化。</p>
+<p>甜点方面，日本传统和菓子如大福、羊羹、抹茶点心等，造型雅致，常在茶道中食用。而现代甜品则融合西式元素，如芝士蛋糕、布丁和各种抹茶口味的创意甜品。</p>
+<p>总的来说，日本美食不仅注重味道，也重视整体的用餐体验——从食器、环境到服务，都体现了日本文化中对细节与礼仪的讲究。</p>
+</div>
+</div>
+</section>
+
+<footer>
+<p>&copy; 2025 Explore Japan | Built with HTML, CSS, and JavaScript</p>
+</footer>
+
+<button id="backToTop" title="返回顶部">↑</button>
+
+<script>
+
+    window.addEventListener("load", () => {
+      document.body.style.opacity = 1;
+    });
+
+
+    function createSakura() {
+      const sakura = document.createElement('div');
+      sakura.classList.add('sakura');
+      sakura.style.left = Math.random() * window.innerWidth + 'px';
+      sakura.style.animationDuration = (Math.random() * 3 + 4) + 's';
+      sakura.style.opacity = Math.random();
+      sakura.style.transform = `rotate(${Math.random() * 360}deg)`;
+      document.body.appendChild(sakura);
+      setTimeout(() => {
+        sakura.remove();
+      }, 8000);
+    }
+    setInterval(createSakura, 300);
+
+
+    const backToTop = document.getElementById("backToTop");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 300) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+    backToTop.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+
+    function highlightFood() {
+      const section = document.getElementById("food");
+      section.id = "highlight";
+      setTimeout(() => {
+        section.id = "food";
+      }, 1500);
+    }
+</script>
+</body>
+</html>
